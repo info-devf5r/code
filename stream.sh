@@ -5,7 +5,7 @@ rm -rf
 gdown $LINK
 mkdir -pv temp && unzip -d ./temp/ -j ${FOLDER_NAME}.zip
 rm -rf *.zip
-
+ls -a /usr/src/app/temp/
 while true; do
   ffmpeg -loglevel info -y -re \
          -f concat -safe 0 -i <((for f in temp/*.${EXT}; do path="$PWD/$f"; echo "file ${path@Q}"; done) | shuf) \

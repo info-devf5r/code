@@ -20,6 +20,10 @@
       "description": "folder name of the link",
       "required": true
     }
+    "EXT": {
+      "description": "video extension",
+      "required": true
+    }
   },
   "formation": {
     "worker": {
